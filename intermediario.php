@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Finexo </title>
+  <title> Intermediário </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -50,7 +50,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.php">
             <span>
-              Finexo
+            Niveis de Conhecimento PHP
             </span>
           </a>
 
@@ -97,11 +97,17 @@
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            Our <span>Services</span>
+            Nivel <span>Intermediário</span>
           </h2>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-          </p>
+          
+          <p>Conceitos e códigos para aprendizado dos itens de conhecimento intermediário em PHP. O conhecimento intermediário exige estudos de programação orientada a objetos.</p>
+         
+          <p>Nesta pagina temos também um botão para login proximo ao menu e um lupa para buscar informações no site. Será implementado os códigos necessários para estas funcionalidades extras. Farei o login e buscador no final dos estudos do nivel intermediário para que o acesso ao conteudo avançado seja acesso atravéz de cadastro e login no site.</p>
+
+          <p>Esta sendo usado para o aprendizado, Windows10, XAMPP 3.3.</p>
+
+
+
         </div>
         <div class="row">
 
@@ -134,22 +140,30 @@
                 <p>
                   No PHP podemos ter várias classes no mesmo arquivo!
                 </p>
-                <p>Estou criando uma classe chamada humano. Abra o código fonte para ver:</p>
+                <p>Estou criando uma classe chamada Caneta. Abra o código fonte para ver:</p>
 
                 <?php
 
-                class humano {
-                  var $cabelo;
-                  var $cor_pele;
-                  var $altura;
-                  var $peso;
+                class Caneta {
+                  var $modelo;
+                  var $cor;
+                  var $ponta;
+                  var $carga;
+                  var $tampada;
                 
 
-                function andar(){
-
+                function rabiscar(){
+                  if ($this->tampada == true){
+                    echo "<p>ERRO! Não posso rabiscar pois estou tampada!</p>";
+                  }else{
+                    echo "<p>Estou rabiscando...</p>";
+                  }
                 }
-                function comer(){
-                  echo "<p>Estou comendo para ganhar peso!</p>";
+                function tampar(){
+                  $this->tampada=true;
+                }
+                function destampar(){
+                  $this->tampada=false;
                 }
               }
                 ?>
@@ -158,13 +172,31 @@
                 <p>Vou usar o comando print_r para mostrar o conteudo do objeto novo_humado.</p>
 
                 <?php
-                $novo_humano = new humano;
-                $novo_humano->cor_pele="pardo";
-                $novo_humano->altura=1.8;
-                $novo_humano->comer();
-                print_r($novo_humano);
+                $c1 = new Caneta;
+                $c1->modelo = "BIC";
+                $c1->cor = "azul";
+                $c1->ponta = 0.5;
+                $c1->tampada;
 
+                $c1->tampar();  
+                $c1->rabiscar();
+
+                print_r($c1);
+                echo "<BR><BR>";
+
+                $c2 = new Caneta;
+                $c2->modelo="Faber Castel";
+                $c2->cor = "vermelha";
+                $c2->ponta = 0.9;
+                $c2->tampada;
+                print_r($c2); 
+
+
+                
+
+                
                 ?>
+
 
               </div>
             </div>
@@ -176,21 +208,19 @@
 
           <div class="col-md-4 ">
             <div class="box ">
-              <div class="img-box">
-                <img src="images/s2.png" alt="">
-              </div>
+              
               <div class="detail-box">
                 <h5>
-                  Security Storage
+                  Visibilidade de Objetos
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
+                  
+
+
+
+
                 </p>
-                <a href="">
-                  Read More
-                </a>
+                
               </div>
             </div>
           </div>
