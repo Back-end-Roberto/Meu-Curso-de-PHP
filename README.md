@@ -1,4 +1,4 @@
-# Em adamento - Meu Curso de PHP
+# Básico Concluido e restante em adamento - Meu Curso de PHP
 
 Estou desenvolvendo este site usando HTML, CSS, JAVA e PHP. O foco deste site é documentar meu aprendizado PHP e deixar um material que possa ajudar iniciantes que desejam apreneder esta linguagem. Estou separando por niveis de conhecimento que vai de básico, intermediário e avançado.
 
